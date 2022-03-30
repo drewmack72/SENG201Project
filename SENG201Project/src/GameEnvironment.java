@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class GameEnvironment {
 	Scanner input;
 	String username;
+	int difficultiy;
 	GameEnvironment () {
 		//TODO add set up for game
 		input = new Scanner(System.in);
 		username = getValueFromUser("username");
+		difficultiy = Integer.parseInt(getValueFromUser("difficultiy"));
 	}
 	
 	private String getValueFromUser(String valueName) {
